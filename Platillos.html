@@ -17,7 +17,21 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!------ Include the above in your HEAD tag ---------->
-  
+  <style type="text/css">
+    button {
+		font-size: 10px;
+		line-height: 10px;
+		min-width: 10px;
+        font-weight: bold;
+		background: #ffffff;
+		border: none;		
+    }
+    button:hover, button:focus{
+		background: #dfe3e4;
+        outline: none !important;
+	}
+
+  </style>
   <div class="navbar navbar-expand-md navbar-dark bg-dark mb-4" role="navigation">
         <a class="navbar-brand" href="#">Mariscos Don Roque</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,12 +54,17 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdown1">
                         <li class="dropdown-item" href="#"><a>Action 1</a></li>
                         <li class="dropdown-item dropdown">
-                            <a class="dropdown-toggle" id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1.1</a>
+                            <a class="dropdown-toggle" id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown1.1</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown1-1">
-                                <li class="dropdown-item" href="#"><a>Action 1.1</a></li>
-                                <li class="dropdown-item dropdown">
-                                    <a class="dropdown-toggle" id="dropdown1-1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1.1.1</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown1-1-1">
+                                    <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                            <div class="dropdown-menu">
+                                              <a class="dropdown-item active" href="#">Action</a>
+                                              <a class="dropdown-item" href="#">Another action</a>
+                                              <a class="dropdown-item" href="#">Something else here</a>
+                                              <div class="dropdown-divider"></div>
+                                              <a class="dropdown-item" href="#">Separated link</a>
+                                            </div> <ul class="dropdown-menu" aria-labelledby="dropdown1-1-1">
                                         <li class="dropdown-item" href="#"><a>Action 1.1.1</a></li>
                                     </ul>
                                 </li>
@@ -119,10 +138,10 @@
                           </div>
                         -->
                         <br>
-                        <center> <input type=image src="images/agrega.png" width="30" height="25">
-                            <input type=image src="images/modifica.png" width="30" height="25">
-                            <input type=image src="images/elimina.png" width="30" height="25">    </center>
-           </div> 
+                        <center> 
+                           <button type="submit"><img src="images/agrega.png" alt="x" /></button>
+                           <button type="submit"><img src="images/modifica.png" alt="x" /></button>
+                           <button type="submit"><img src="images/elimina.png" alt="x" /></button></div> 
            <br><br>
           <div class="form-group form-check">
                 <label class="form-check-label">

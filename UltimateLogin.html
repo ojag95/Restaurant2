@@ -4,27 +4,32 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Green Colored Sign in Form with Avatar Icon</title>
+<title>Login</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+<link rel="stylesheet" href="css/main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 <style type="text/css">
 	body {
 		color: #4e4e4e;
-		background-image: url(https://vignette.wikia.nocookie.net/clubpenguin/images/3/3f/Fondo_del_Mar.PNG/revision/latest?cb=20141114015427&path-prefix=es);
-        font-family: 'Roboto', sans-serif;
+		height: 100%;
+		width: 100%;
+        background-repeat: no-repeat;
+		background-image: url(https://cdn.pixabay.com/photo/2016/06/17/11/46/morocco-1463212_960_720.jpg); 
+		font-family: 'Police serif', sans-serif;
+		background-size: 100%;
 	}
     .form-control {
-		background: #f2f2f2;
+		background: #42e5eb;
         font-size: 16px;
 		border-color: transparent;
 		box-shadow: none !important;
 	}
 	.form-control:focus {
-		border-color: #91d5a8;
+		border-color: #91c7d5;
         background: #e9f5ee;
 	}
     .form-control, .btn {        
@@ -48,11 +53,11 @@
 		line-height: 26px;
 		min-width: 120px;
         font-weight: bold;
-		background: #4aba70;
+		background: #6bcccf;
 		border: none;		
     }
 	.login-form .btn:hover, .login-form .btn:focus{
-		background: #40aa65;
+		background: #24f3fa;
         outline: none !important;
 	}
 	.checkbox-inline {
@@ -62,7 +67,7 @@
 		margin-top: 3px;
 	}
     .login-form a {
-		color: #4aba70;
+		color: #6bcccf;
 	}	
 	.login-form a:hover {
 		text-decoration: underline;
@@ -80,7 +85,7 @@
 		border-radius: 4px;
 	}   
 	.form-control:focus {
-		border-color: #99c432;
+		border-color: #6bcccf;
 	}
 	.login-form {
 		width: 310px;
@@ -112,7 +117,7 @@
 		height: 95px;
 		border-radius: 50%;
 		z-index: 9;
-		background: #70c5c0;
+		background: #6bcccf;
 		padding: 15px;
 		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 	}
@@ -136,10 +141,11 @@
 </style>
 </head>
 <body>
+	<!--	<center><titul>Marisqueria "El puerto de Don Roque"</titul></center>  -->
 <div class="login-form">
 <form action="Menu.html" method="post">    
 <div class="avatar"> <img src="images/avatar.png" alt="Avatar"> </div>   
-<h2 class="text-center"><strong>Login</strong></h2>    
+<h2 class="text-center"><strong>Inicio de sesión</strong></h2>    
         <div class="form-group">
         	<input type="text" class="form-control input-lg" name="username" placeholder="Usuario" required="required">	
         </div>
@@ -147,7 +153,7 @@
             <input type="password" class="form-control input-lg" name="password" placeholder="Contraseña" required="required">
         </div>        
         <div class="form-group clearfix">
-			<label class="pull-left checkbox-inline"><input type="checkbox"> Recordar sesion</label>
+			<label class="pull-left checkbox-inline"><input type="checkbox"> Recordar </label>
             <button type="submit" class="btn btn-primary btn-lg pull-right">Acceder</button>
         </div>		
     </form>
